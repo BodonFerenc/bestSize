@@ -3,4 +3,5 @@ We have a table of bid prices and sizes of two buyers. Bid price p with size s m
 
    * bid prices offered by the two buyers, pA and pB.
    * bid sizes, sA and sB.
+   
 Our job is to add a new best size column (bS) to the table, that returns the size at the best price. If the two buyers have the same price then bS is equal to sA + sB, otherwise, we need to take the bid size of the buyer that offers the higher price.
