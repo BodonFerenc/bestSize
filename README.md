@@ -9,3 +9,5 @@ Our job is to add a new best size column (_bS_) to the table, that returns the s
 An example table with the desired extra column is below. The best prices are in bold.
 
 ![Sample table](/example.png)
+
+I published an [in-depth analyses](https://www.linkedin.com/pulse/data-analysis-example-python-q-ferenc-bodon-ph-d-/) about this problem to my [LinkedIn profile](https://www.linkedin.com/in/ferencbodon/).
