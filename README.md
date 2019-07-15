@@ -8,3 +8,4 @@ Our job is to add a new best size column (_bS_) to the table, that returns the s
 
 An example table with the desired extra column is below. The best prices are in bold.
 
+![Sample table](/example.png)
