@@ -1,0 +1,19 @@
+
+-- Google BigQuery
+
+INSERT INTO `myproject.t`
+  SELECT 
+    CAST(FLOOR(5 * RAND()) AS INT64) AS pA,
+    CAST(FLOOR(5 * RAND()) AS INT64) AS pB,
+    CAST(FLOOR(100 * RAND()) AS INT64) AS sA,
+    CAST(FLOOR(100 * RAND()) AS INT64) AS sB
+  FROM UNNEST(GENERATE_ARRAY(1, 1000 * 1000)), 
+       UNNEST(GENERATE_ARRAY(1, DIV(@N, 1000 * 1000)))
+
+SELECT pA, pB, sA, sB,
+  CASE
+	WHEN pA = pB THEN sA + sB
+	WHEN pA > pB THEN sA
+	ELSE sB
+  END AS bS
+FROM `myproject.t`
