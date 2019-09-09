@@ -13,7 +13,7 @@ def createTable(N):
 
 def createMultiColTable(N, pCols, sCols):
    M = len(pCols)
-   if(M != len(sCols)):
+   if M != len(sCols):
         raise ValueError("length of price and size column names must be equal")
    return pd.DataFrame(
         np.concatenate([np.random.randint(0, PRICEDOMSIZE, size=(N, M)), 
@@ -29,7 +29,7 @@ def createArrayTable(N, M):
                 for i in rowLength])})
 
 def bestSizeIF(pA, pB, sA, sB):
-    if(pA == pB):
+    if pA == pB:
         return sA + sB
     return sA if (pA > pB) else sB
 
