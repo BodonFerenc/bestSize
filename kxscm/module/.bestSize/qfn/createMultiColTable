@@ -1,0 +1,15 @@
+// @fileOverview
+// Creates a random table of multiple price and size columns
+//
+// @param N {long} The number of rows
+// @param pCols {symbol[]} list of price column names
+// @param sCols {symbol[]} list of size column names
+//
+// @returns {table} Returns a table of int colums
+{[N; pCols; sCols]
+   M: count pCols;
+   if[not M = count sCols;
+      '"length of price and size column names must be equal"];
+   :flip (pCols, sCols)!raze N cut'(M*N)?'PRICEDOMSIZE, SIZEDOMSIZE
+    }
+

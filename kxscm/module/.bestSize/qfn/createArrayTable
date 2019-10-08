@@ -1,0 +1,11 @@
+// @fileOverview
+// Creates a random table of array price and size columns
+//
+// @param N {long} The number of rows
+// @param M {long} The number of element each price/size column should contain
+//
+// @returns {table} Returns a table of two long array columns
+{[N; M]
+   rowLength: 1 + N?M;
+   :([] price: rowLength ?\: PRICEDOMSIZE; 
+         size: rowLength ?\: SIZEDOMSIZE)};
