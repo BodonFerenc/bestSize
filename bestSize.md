@@ -143,3 +143,5 @@
 |Name|Type|Description|
 |---|---|---|
 |&lt;returns&gt;|table|table of colums pA, pB, sA, sB of type long|
+
+## .bestSize.test.smallTestTable
