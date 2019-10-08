@@ -1,3 +1,5 @@
+\d .bestSize
+
 PRICEDOMSIZE:  5;
 SIZEDOMSIZE: 100;
 
@@ -87,3 +89,5 @@ bestSizeWSUM_G: {[p; s]
 
 bestSizeWSUM_G_N2: {[p; s]
    :s wsum' p = max each p};
+
+\d .

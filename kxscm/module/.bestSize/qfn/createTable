@@ -1,0 +1,10 @@
+// @fileOverview
+// Creates a random table
+//
+// @param {long} The number of rows
+//
+// @returns {Type} Returns a table of int colums pA, pB, sA, sB
+createTable: {[N]
+    :([] pA: N?PRICEDOMSIZE; pB: N?PRICEDOMSIZE; 
+         sA: N?SIZEDOMSIZE;  sB: N?SIZEDOMSIZE)
+    };
