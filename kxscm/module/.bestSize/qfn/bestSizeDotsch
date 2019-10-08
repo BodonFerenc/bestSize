@@ -1,0 +1,2 @@
+{[pA; pB; sA; sB] 
+   (sA * pA >= pB) + sB * pA <= pB};

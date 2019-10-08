@@ -1,0 +1,6 @@
+feature bestSizeIF
+    should return best size values
+        expect run test on a small table
+            exec bestSizeIF'[pA; pB; sA; sB] from test.smallTestTable
+        to match 
+            exec bS from test.smallTestTable

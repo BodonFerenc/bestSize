@@ -1,0 +1,8 @@
+feature bestSizeIF_V
+    before
+        `testTableRandom set .bestSize.createTable[100]
+    should return best size values
+        expect run test on a small table
+            exec bestSizeIF'[pA; pB; sA; sB] from `testTableRandom
+        to match 
+            exec bestSizeIF_V[pA; pB; sA; sB] from `testTableRandom

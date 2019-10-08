@@ -1,0 +1,4 @@
+{[pA; pB; sA; sB]
+      p: flip (pA; pB);   // N x 2
+      :sum each flip[(sA; sB)] * 
+         p = max each p};

@@ -1,0 +1,4 @@
+{[pA; pB; sA; sB]
+      p: (pA; pB);        // 2 x N
+      :sum (sA; sB) * 
+         p =\: max p};         

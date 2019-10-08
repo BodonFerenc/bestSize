@@ -1,0 +1,2 @@
+{[p; s]
+   :s wsum' p = max each p};

@@ -1,0 +1,4 @@
+{[pA; pB; sA; sB]
+   p: flip (pA; pB);
+   :flip[(sA; sB)] wsum' 
+      p = max each p};

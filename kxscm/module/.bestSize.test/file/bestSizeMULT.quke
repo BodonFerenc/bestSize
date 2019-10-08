@@ -1,0 +1,6 @@
+feature bestSizeMULT
+    should return best size values
+        expect run test on a small table
+            exec bestSizeMULT'[pA; pB; sA; sB] from `testTableRandom
+        to match 
+            exec bestSizeIF'[pA; pB; sA; sB] from `testTableRandom

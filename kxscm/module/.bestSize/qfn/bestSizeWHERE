@@ -1,0 +1,4 @@
+{[pA; pB; sA; sB] 
+  p: pA, pB;
+  :sum (sA, sB) 
+     where p = max p};

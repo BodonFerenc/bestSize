@@ -1,0 +1,13 @@
+// @fileOverview
+// Return bestSize value using vector IF
+//
+// @param pA {long[]} price of buyer A
+// @param pB {long[]} price of buyer B
+// @param sA {long[]} size of buyer A
+// @param sB {long[]} size of buyer B
+//
+// @returns {long[]} bestSize value that is sA or sB or sA + sB if pA equals to pB
+{[pA; pB; sA; sB] 
+   ?[pA = pB;
+       sA + sB;
+       ?[pA > pB; sA; sB]]};    
