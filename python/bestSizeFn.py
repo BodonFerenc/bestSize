@@ -31,7 +31,7 @@ def createArrayTable(N, M):
 def bestSizeIF(pA, pB, sA, sB):
     if pA == pB:
         return sA + sB
-    return sA if (pA > pB) else sB
+    return sA if pA > pB else sB
 
 def bestSizeWHERE(pA, pB, sA, sB):
     p = np.array([pA, pB])
